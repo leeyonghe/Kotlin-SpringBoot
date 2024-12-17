@@ -6,7 +6,7 @@
 - 구조 : Spring Boot + Tomcat10 + JPA + thymeleaf
 - Infra : Docker
     ![](screenshot/ddd.png)
-- 실행방법 : 
+- 실행방법 : <br>
     ```bash
     $ sh run.sh
     ```
@@ -14,15 +14,16 @@
     ```
     $ cat src/main/resources/data.sql
     ```
-- DB 구조
-    >![](screenshot/aaa.png)
+- DB 구조<br>
+    ![](screenshot/aaa.png)
     ![](screenshot/bbb.png)
-- 접속방법
+- 접속방법<br>
     http://localhost:8080/
     ![](screenshot/ccc.png)
+- 사용방법<br>
+    ![](screenshot/eee.gif)
 --------
 
-<br>
 # ✏️ 과제 개요
 
 1. 상품 조회 : 구매 가능한 상품 목록을 불러옵니다.
@@ -33,12 +34,12 @@
 # 📝 요구 사항
 
 ## 1️⃣ 기술적 요구사항
-- Java 17 이상을 사용해주세요.
-- SpringBoot 버전은 3.x 이상을 사용해주세요.
-- Database는 MariaDB 10.x를 사용해주세요.
-- Database 상호작용에는 JPA를 사용해주세요.
-- Git을 사용해 작업 내용을 관리해주세요.
-- README.md를 작성해주세요.
+- Java 17 이상
+- SpringBoot 버전 3.x 이상
+- Database는 MariaDB 10.x
+- Database 상호작용에는 JPA를 사용
+- Git을 사용해 작업 내용을 관리
+- README.md를 작성
 
 ## 2️⃣ 기능적 요구사항
 
