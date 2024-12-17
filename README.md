@@ -20,6 +20,8 @@
 - 접속방법
     http://localhost:8080/
     ![](screenshot/ccc.png)
+- 사용방법
+    ![](screenshot/eee.gif)
 --------
 
 <br>
