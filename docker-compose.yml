@@ -1,0 +1,27 @@
+services:
+  allra_be:
+    tty: true
+    container_name: allra_be    
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - TZ=Asia/Seoul
+      - "SPRING_PROFILES_ACTIVE=prod"
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mariadb
+  mariadb :
+      image: docker.io/bitnami/mariadb:10.6
+      container_name: mariadb
+      ports:
+        - 3306:3306
+      environment:
+        - TZ="Asia/Seoul"
+        - ALLOW_EMPTY_PASSWORD=test
+        - MARIADB_ROOT_PASSWORD=test123~!
+        - MARIADB_USER=allra
+        - MARIADB_DATABASE=allra
+        - MARIADB_PASSWORD=test123~!
+      restart: always
