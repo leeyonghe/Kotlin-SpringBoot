@@ -16,7 +16,7 @@ import back.end.assignment.dto.ProductResponseDto;
 public interface BasketItemsRepository extends JpaRepository<BasketItems, Long> {
 
 	@Query("SELECT\n"
-			+ "	new back.end.assignment.dto.AmountDto(SUM(p.price) as amount)\n"
+			+ "	new back.end.assignment.dto.AmountDto(SUM(p.price)*bi.pcount)\n"
 			+ "from\n"
 			+ "	Orders o\n"
 			+ " Left Join Basket b on o.basket.id = b.id\n"

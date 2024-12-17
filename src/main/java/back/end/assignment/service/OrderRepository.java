@@ -16,7 +16,7 @@ import back.end.assignment.dto.OrderHistoryResponseDto;
 public interface OrderRepository extends JpaRepository<Orders, Long> {
 	
 	@Query("SELECT\n"
-			+ "	new back.end.assignment.dto.OrderHistoryResponseDto(c.name, GROUP_CONCAT(p.name), SUM(p.price), o.createdAt, o.txn) \n"
+			+ "	new back.end.assignment.dto.OrderHistoryResponseDto(c.name, GROUP_CONCAT(p.name), SUM(p.price*bi.pcount), o.createdAt, o.txn) \n"
 			+ "from\n"
 			+ "	Orders o\n"
 			+ " Left Join Basket b on b.id = o.basket.id \n"
