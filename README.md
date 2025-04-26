@@ -92,11 +92,3 @@ Run tests using: / 다음 명령어로 테스트를 실행합니다:
 ```bash
 ./gradlew test
 ```
-
-## 📝 License / 라이센스
-
-[Add your license information here] / [라이센스 정보를 여기에 추가하세요]
-
-## 👥 Contributing / 기여하기
-
-[Add contribution guidelines here] / [기여 가이드라인을 여기에 추가하세요]
